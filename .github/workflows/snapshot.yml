@@ -1,8 +1,14 @@
 name: Snapshot
 
 on:
-  schedule:
-    - cron: '* * * * *'
+  push:
+    branches: 
+      - develop
+      - master
+      - main
+# on:
+#   schedule:
+#     - cron: '* * * * *'
   workflow_dispatch:
 
 jobs:
