@@ -1,8 +1,8 @@
 name: Snapshot
 
 on:
-  push:
-    branches: 
+  pull_request:
+    branches:
       - develop
       - master
       - main
